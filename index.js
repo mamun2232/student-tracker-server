@@ -18,7 +18,9 @@ const auth = {
 
 const nodemailerMailgun = nodemailer.createTransport(mg(auth));
 // middeleware
-app.use(cors());
+app.use(cors({
+  origin: "http://localhost:3000"
+}))
 app.use(express.json());
 
 // database configaretion
