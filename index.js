@@ -23,7 +23,7 @@ app.use(cors({
 }))
 app.use(express.json());
 
-// database configaretion
+// database configaretio
 const uri =
   `mongodb+srv://${process.env.NAME}:${process.env.PASS}@mamun.rd1yf.mongodb.net/?retryWrites=true&w=majority`;
 const client = new MongoClient(uri, {
